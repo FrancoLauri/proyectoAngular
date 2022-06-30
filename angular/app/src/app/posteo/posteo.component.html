@@ -1,0 +1,21 @@
+
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>estado</th>
+                <th>mensaje</th>
+                <th>usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of lista">
+                <td>{{ item.estado }}</td>
+                <td>{{ item.mensaje }}</td>
+                <td>{{ item.usuarioEstado }}</td>
+                <td *ngIf = "item.usuarioEstado == usuarioLocal"><button (click)="borrar(item._id)">Borrar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,18 @@
+   <div>
+    <h1>tus datos:</h1>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>edad</th>
+                <th>email</th>
+                <th>usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let item of listaDatosPersonales">
+                <td>{{ item }}</td>
+            </tr>
+            <!--<button (click)="mostrar">Mostrar</button>-->
+        </tbody>
+</div>

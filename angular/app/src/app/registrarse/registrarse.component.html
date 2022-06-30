@@ -1,0 +1,29 @@
+<div>
+    <header>
+        <h1>Registrarse:</h1>
+    </header>
+    <div>
+        <form (ngSubmit)="enviarRegistro()">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" [(ngModel)]="nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" [(ngModel)]="apellido">
+
+            <label for="edad">Edad</label>
+            <input type="text" name="edad" [(ngModel)]="edad">
+
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" [(ngModel)]="usuario">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" [(ngModel)]="email">
+
+            <label for="clave">Clave</label>
+            <input type="password" name="clave" [(ngModel)]="clave">
+
+            <button type="submit">Enviar</button>
+        </form>
+        <a routerLink="../login"><button>entra!</button></a>
+    </div>
+</div>

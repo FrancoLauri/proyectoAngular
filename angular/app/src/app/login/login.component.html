@@ -1,0 +1,18 @@
+<div>
+    <header>
+        <h1>Bienvenido a ArgenTuit</h1>
+    </header>
+    <div>
+        <h2>Login</h2>
+        <form (ngSubmit)="enviarLogin()">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" [(ngModel)]="usuario">
+            
+            <label for="clave">Clave</label>
+            <input type="password" name="clave" [(ngModel)]="clave">
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <a routerLink="../registrarse"><button >registrate</button></a>
+</div>

@@ -1,0 +1,24 @@
+<br>
+<br>
+<br>
+<br>
+<form (ngSubmit)="publicar()">
+    <div>
+        <label for="listaEstados">Estado de animo</label>
+        <select name="listaEstados" [(ngModel)]="estadoElegido">
+            <option *ngFor="let estados of estados" [value]="estados._id">{{estados.listaEstado}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="texto">Mensaje</label>
+        <textarea name="texto" cols="30" rows="10" [(ngModel)]="texto"></textarea>
+    </div>
+    <div><!--
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" [(ngModel)]="usuario">cambiar lo del usuario x usuario sesion
+        -->
+    </div>
+    <div>
+        <button type="submit">publicar</button>
+    </div>
+</form>
